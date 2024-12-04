@@ -2,6 +2,7 @@
 #define ITENS_H
 
 #include <string>
+#include "golpe.h"
 
 class Item {
     protected:
@@ -12,9 +13,7 @@ class Item {
         // Variáveis que serão alteradas futuramente, pois viriam dos Pokémons ou de outras classes
         int _vidaPokemon;
         int _relacoes[18];
-        int _precisao;  // Essa, será conectada com a classe "golpes"
         bool _efeito;   // Utilizada quando o efeito de envenenamento é aplicado
-        int _poderBase;
 
     public:
         void hpBerry();
