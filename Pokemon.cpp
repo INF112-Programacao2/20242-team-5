@@ -1,7 +1,13 @@
 #include "Pokemon.hpp"
-#include <string>
 
-Pokemon::Pokemon(int id, std::string nome) : _id(id), _nome(nome), _estatisticas(Estatisticas(id)) {}
+Pokemon::Pokemon(int id, std::string nome, int vida, int ataque, int defesa, int ataqueEspecial, int defesaEspecial, int velocidade, Tipo &tipo1, Tipo &tipo2) : _id(id), _nome(nome), _tipo1(tipo1), _tipo2(tipo2) {
+    _estatisticas[0] = vida;
+    _estatisticas[1] = ataque;
+    _estatisticas[2] = defesa;
+    _estatisticas[3] = ataqueEspecial;
+    _estatisticas[4] = defesaEspecial;
+    _estatisticas[5] = velocidade;
+}
 
 int Pokemon::get_id(){
     return _id;
@@ -11,26 +17,6 @@ std::string Pokemon::get_nome() {
     return _nome;
 }
 
-int Pokemon::get_vida() const {
-    return _estatisticas.get_vida();
-}
-
-int Pokemon::get_ataque() const {
-    return _estatisticas.get_ataque();
-}
-
-int Pokemon::get_defesa() const {
-    return _estatisticas.get_defesa();
-}
-
-int Pokemon::get_ataqueEspecial() const {
-    return _estatisticas.get_ataqueEspecial();
-}
-
-int Pokemon::get_defesaEspecial() const {
-    return _estatisticas.get_defesaEspecial();
-}
-
-int Pokemon::get_velocidade() const {
-    return _estatisticas.get_velocidade();
+int Pokemon::get_estatistica(int estatistica){
+    return _estatisticas[estatistica];
 }

@@ -1,26 +1,23 @@
-#ifndef Pokemon_HPP
-#define Pokemon_HPP
+#ifndef POKEMON_HPP
+#define POKEMON_HPP
 
 #include <string>
-#include "Estatisticas.hpp"
+#include <vector>
+#include "Tipos.cpp"
 
 class Pokemon {
     private:
         int _id;
         std::string _nome;
-        Estatisticas _estatisticas;
+        int _estatisticas[6];
+        Tipo _tipo1;
+        Tipo _tipo2;
 
     public:
-        Pokemon(int id, std::string nome);
+        Pokemon(int id, std::string nome, int vida, int ataque, int defesa, int ataqueEspecial, int defesaEspecial, int velocidade, Tipo &tipo1, Tipo &tipo2);
         int get_id();
         std::string get_nome();
-
-        int get_vida() const;
-        int get_ataque() const;
-        int get_defesa() const;
-        int get_ataqueEspecial() const;
-        int get_defesaEspecial() const;
-        int get_velocidade() const;
+        int get_estatistica(int estatistica);
 };
 
 #endif
