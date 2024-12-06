@@ -1,5 +1,5 @@
-#ifndef TIPO_H
-#define TIPO_H
+#ifndef TIPO_HPP
+#define TIPO_HPP
 
 #include <string>
 
