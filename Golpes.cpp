@@ -1,6 +1,6 @@
-#include "golpe.h"
-#include "condicional.h"
-#include "modificaest.h"
+#include "Golpe.hpp"
+#include "Condicional.hpp"
+#include "ModificaEst.hpp"
 #include "tipos.cpp"
 
 Golpe normalFisico("Strength", 80, 100, Normal, 0); // Golpe simples chamado Strength, com 80 de poder base, 100% de precisão, tipo normal e físico
