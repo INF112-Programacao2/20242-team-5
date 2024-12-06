@@ -1,8 +1,8 @@
-#ifndef ITENS_H
-#define ITENS_H
+#ifndef ITENS_HPP
+#define ITENS_HPP
 
 #include <string>
-#include "golpe.h"
+#include "Golpe.hpp"
 
 class Item {
     protected:
