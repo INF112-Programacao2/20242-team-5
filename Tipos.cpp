@@ -1,4 +1,4 @@
-#include "tipo.h"
+#include "Tipo.hpp"
 
 float normal[18] = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0.5, 0, 1, 1, 0.5, 1}; // Não afeta: fantasma. Fraco contra: pedra e aço.
 Tipo Normal("Normal", 0, normal);
