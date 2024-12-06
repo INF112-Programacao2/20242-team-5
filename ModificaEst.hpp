@@ -1,4 +1,7 @@
-#include "golpe.h"
+#ifndef MODIFICAEST_HPP
+#DEFINE MODIFICAEST_HPP
+
+#include "Golpe.hpp"
 
 class ModificaEst : public Golpe{ // Uma espécie de golpes que modifica as estatísticas de um Pokémon
     private:
@@ -11,3 +14,5 @@ class ModificaEst : public Golpe{ // Uma espécie de golpes que modifica as esta
         int get_chance();
         bool is_autoAlvo();
 };
+
+#endif
