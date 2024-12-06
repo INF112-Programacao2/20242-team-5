@@ -1,5 +1,5 @@
 #ifndef MODIFICAEST_HPP
-#DEFINE MODIFICAEST_HPP
+#define MODIFICAEST_HPP
 
 #include "Golpe.hpp"
 
