@@ -1,7 +1,7 @@
-#ifndef GOLPES_H
-#define GOLPES_H
+#ifndef GOLPE_HPP
+#define GOLPE_HPP
 
-#include "tipo.h"
+#include "Tipo.hpp"
 #include <string>
 
 class Golpe{
