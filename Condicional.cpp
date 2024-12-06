@@ -1,4 +1,4 @@
-#include "condicional.h"
+#include "Condicional.h"
 
 Condicional::Condicional(std::string nome, int poderBase, int precisao, Tipo tipo, bool especial, int condicao, int chance) : Golpe(nome, poderBase, precisao, tipo, especial), _condicao(condicao), _chance(chance) {} // Construtor
 
