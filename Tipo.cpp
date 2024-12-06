@@ -1,4 +1,4 @@
-#include "tipo.h"
+#include "Tipo.hpp"
 
 Tipo::Tipo(std::string nome, int numRep, float relacoes[]): _nome(nome), _numRep(numRep) {
     for(int i = 0; i < 18; i++)
