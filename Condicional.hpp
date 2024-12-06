@@ -1,3 +1,6 @@
+#ifndef CONDICIONAL_HPP
+#define CONDICIONAL_HPP
+
 #include "Golpe.h"
 
 class Condicional : public Golpe{ // Uma espécie de golpes que aplicam uma condição ao inimigo
@@ -9,3 +12,5 @@ class Condicional : public Golpe{ // Uma espécie de golpes que aplicam uma cond
         int get_condicao();
         int get_chance();
 };
+
+#endif
