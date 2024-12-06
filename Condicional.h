@@ -1,4 +1,4 @@
-#include "golpe.h"
+#include "Golpe.h"
 
 class Condicional : public Golpe{ // Uma espécie de golpes que aplicam uma condição ao inimigo
     private:
