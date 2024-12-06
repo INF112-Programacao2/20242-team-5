@@ -2,19 +2,25 @@
 #define Pokemon_HPP
 
 #include <string>
-#include "tipo.h"
-#include "itens.h"
-#include "golpe.h"
+#include "Estatisticas.hpp"
 
 class Pokemon {
-    int _id;
-    std::string _nome;
-    Tipo _tipagem[2];
-    int _estatisticas[6]; // vida, ataque, defesa, ataque especial, defesa especial, velocidade
-    bool status;
-    Item _item;
-    //habilidade
-    Golpe _golpes[4];
+    private:
+        int _id;
+        std::string _nome;
+        Estatisticas _estatisticas;
+
+    public:
+        Pokemon(int id, std::string nome);
+        int get_id();
+        std::string get_nome();
+
+        int get_vida() const;
+        int get_ataque() const;
+        int get_defesa() const;
+        int get_ataqueEspecial() const;
+        int get_defesaEspecial() const;
+        int get_velocidade() const;
 };
 
 #endif
