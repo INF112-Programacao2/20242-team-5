@@ -1,7 +1,7 @@
 #ifndef CONDICIONAL_HPP
 #define CONDICIONAL_HPP
 
-#include "Golpe.h"
+#include "Golpe.hpp"
 
 class Condicional : public Golpe{ // Uma espécie de golpes que aplicam uma condição ao inimigo
     private:
