@@ -13,7 +13,8 @@ class Tipo{
         Tipo(std::string nome, int numRep, float relacoes[]); // Construtor
         std::string get_nome();
         int get_numRep();
-        float get_relacoes(int tipo);
+        float get_relacao(int tipo);
+        float* get_relacoes();
 };
 
 #endif

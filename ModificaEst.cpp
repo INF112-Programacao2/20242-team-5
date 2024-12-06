@@ -1,6 +1,6 @@
 #include "ModificaEst.hpp"
 
-ModificaEst::ModificaEst(std::string nome, int poderBase, int precisao, Tipo tipo, bool especial, int estagioAtaque, int estagioDefesa, int estagioAtaqueEsp, int estagioDefesaEsp, int estagioVelocidade, int chance, bool autoAlvo) : Golpe(nome, poderBase, precisao, tipo, especial),  _chance(chance), _autoAlvo(autoAlvo) { // Construtor
+ModificaEst::ModificaEst(std::string nome, int poderBase, int precisao, Tipo &tipo, bool especial, int estagioAtaque, int estagioDefesa, int estagioAtaqueEsp, int estagioDefesaEsp, int estagioVelocidade, int chance, bool autoAlvo) : Golpe(nome, poderBase, precisao, tipo, especial),  _chance(chance), _autoAlvo(autoAlvo) { // Construtor
     _estatisticasAfetadas[1] = estagioAtaque;
     _estatisticasAfetadas[2] = estagioDefesa;
     _estatisticasAfetadas[3] = estagioAtaqueEsp;

@@ -9,7 +9,7 @@ class ModificaEst : public Golpe{ // Uma espécie de golpes que modifica as esta
         int _chance; // Chance de modificar as estatísticas
         bool _autoAlvo; // Determina se afeta o oponente ou o próprio usuário
     public:
-        ModificaEst(std::string nome, int poderBase, int precisao, Tipo tipo, bool especial, int estagioAtaque, int estagioDefesa, int estagioAtaqueEsp, int estagioDefesaEsp, int estagioVelocidade, int chance, bool autoAlvo); // Construtor
+        ModificaEst(std::string nome, int poderBase, int precisao, Tipo &tipo, bool especial, int estagioAtaque, int estagioDefesa, int estagioAtaqueEsp, int estagioDefesaEsp, int estagioVelocidade, int chance, bool autoAlvo); // Construtor
         int* get_estatisticasAfetadas();
         int get_chance();
         bool is_autoAlvo();

@@ -9,6 +9,10 @@ int Tipo::get_numRep(){
     return _numRep; 
 }
 
-float Tipo::get_relacoes(int tipo){
+float Tipo::get_relacao(int tipo){
     return _relacoes[tipo]; // Retornando a relação com o tipo desejado
+}
+
+float* Tipo::get_relacoes(){
+    return _relacoes;
 }
