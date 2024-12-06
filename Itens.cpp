@@ -1,4 +1,4 @@
-#include <itens.h>
+#include "Itens.hpp"
 
 void Item::hpBerry(){
     _vidaPokemon += 50;
