@@ -14,6 +14,10 @@ int Golpe::get_precisao(){
     return _precisao;
 }
 
+int Golpe::get_tipoNum(){
+    return _tipo.get_numRep();
+}
+
 Tipo Golpe::get_tipo(){
     return _tipo;
 }

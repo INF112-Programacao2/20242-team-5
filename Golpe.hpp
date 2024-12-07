@@ -17,6 +17,7 @@ class Golpe{
         int get_poderBase();
         int get_precisao();
         Tipo get_tipo();
+        int get_tipoNum();
         bool is_especial();
 };
 

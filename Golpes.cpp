@@ -1,7 +1,7 @@
 #include "Golpe.hpp"
 #include "Condicional.hpp"
 #include "ModificaEst.hpp"
-#include "tipos.cpp"
+#include "Tipos.cpp"
 
 Golpe normalFisico("Força", 80, 100, Normal, 0); // Golpe simples chamado Strength, com 80 de poder base, 100% de precisão, tipo normal e físico
 Golpe normalEspecial("Super Voz", 90, 100, Normal, 1); // Golpe simples chamado Hyper Voice, com 90 de poder base, 100% de precisão, tipo normal e especial
