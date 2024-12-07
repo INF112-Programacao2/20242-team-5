@@ -1,3 +1,6 @@
+#ifndef TIPOS_CPP
+#define TIPOS_CPP
+
 #include "Tipo.hpp"
 
 float normal[18] = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0.5, 0, 1, 1, 0.5, 1}; // Não afeta: fantasma. Fraco contra: pedra e aço.
@@ -53,3 +56,5 @@ Tipo Aco("Aço", 16, aco);
 
 float fada[18] = {1, 0.5, 1, 1, 1, 1, 2, 0.5, 1, 1, 1, 1, 1, 1, 2, 2, 0.5, 1}; // Fraco contra: fogo, veneno e aço. Superefetivo contra: lutador, dragão e escuridão.
 Tipo Fada("Fada", 17, fada);
+
+#endif

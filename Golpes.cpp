@@ -1,3 +1,6 @@
+#ifndef GOLPES_CPP
+#define GOLPES_CPP
+
 #include "Golpe.hpp"
 #include "Condicional.hpp"
 #include "ModificaEst.hpp"
@@ -16,3 +19,5 @@ Golpe aguaEspecial("Prensa Hidráulica", 110, 80, Agua, 1);
 ModificaEst aguaStatus("Recolher", 0, 100, Agua, 1, 0, 1, 0, 1, 0, 100, 1);
 
 Golpe gramaFisico("Chicote", 120, 85, Grama, 0);
+
+#endif

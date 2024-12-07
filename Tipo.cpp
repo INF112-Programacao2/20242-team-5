@@ -6,7 +6,7 @@ Tipo::Tipo(std::string nome, int numRep, float relacoes[]): _nome(nome), _numRep
 }
 
 int Tipo::get_numRep(){
-    return _numRep; 
+    return _numRep;
 }
 
 float Tipo::get_relacao(int tipo){

@@ -3,8 +3,7 @@
 
 #include <string>
 #include <vector>
-#include "ModificaEst.cpp"
-#include "Condicional.cpp"
+#include "Golpes.cpp"
 
 class Pokemon {
     private:
