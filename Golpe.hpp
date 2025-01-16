@@ -14,11 +14,17 @@ class Golpe{
     public:
         Golpe(std::string nome, int poderBase, int precisao, Tipo &tipo, bool especial); // Construtor
         std::string get_nome();
+        void set_nome(std::string nome);
         int get_poderBase();
+        void set_poderBase(int poderBase);
         int get_precisao();
+        void set_precisao(int precisao);
         Tipo get_tipo();
+        void set_tipo(Tipo tipo);
         int get_tipoNum();
+        void set_tipoNum(int tipoNum);
         bool is_especial();
+        void set_especial(bool especial);
 };
 
 #endif

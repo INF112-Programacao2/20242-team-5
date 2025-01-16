@@ -3,7 +3,8 @@
 
 #include <string>
 #include <vector>
-#include "Golpes.cpp"
+#include "Condicional.hpp"
+#include "ModificaEst.hpp"
 
 class Pokemon {
     private:
@@ -23,7 +24,7 @@ class Pokemon {
         int get_estatistica(int estatistica); // Retorna uma das 6 estatísticas do Pokémon
         int get_estagio(int estatistica); // Retorna o estágio de uma das 6 estatísticas do Pokémon
         void set_estagio(int estatistica, int estagio); // Altera o estágio de uma das estatísticas do Pokémon
-        Tipo get_tipo1(); 
+        Tipo get_tipo1();
         Tipo get_tipo2();
         int get_tipo1Num();
         int get_tipo2Num();

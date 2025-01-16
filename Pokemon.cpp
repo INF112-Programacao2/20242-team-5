@@ -53,7 +53,7 @@ int Pokemon::get_tipo2Num(){
 }
 
 int Pokemon::get_relacaoTipo(Tipo tipo, int posicao){ // Retorna a relação entre dois tipos
-    return tipo.get_relacao(posicao);
+    return tipo.get_relacao(tipo.get_numRep(), (posicao));
 }
 
 int Pokemon::get_condicao(){
