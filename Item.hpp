@@ -2,17 +2,20 @@
 #define ITEM_HPP
 
 #include <string>
+#include <iostream>
+#include "Pokemon.hpp"
 
 class Item {
     private:
-        std::string _nome;
+        std::string _nome_item;
         std::string _descricao;
-        float _efeito; 
+        bool _ativo; 
 
     public:
-        Item(std::string nome, std::string descricao, float efeito); 
-        std::string get_nome();
-        float get_efeito();
+        Item(std::string nome, std::string descricao, bool ativo); 
+        std::string get_nome_item() const;
+        bool get_ativo() const;
+        void aplicar_efeito(Pokemon &pokemon);
     
 };
 
