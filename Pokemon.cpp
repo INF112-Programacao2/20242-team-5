@@ -28,6 +28,11 @@ int Pokemon::get_estatistica(int estatistica){ // Retorna uma das 6 estatística
     return _estatisticas[estatistica]; 
 }
 
+void Pokemon::set_estatistica(int estatistica, int valor){
+    _estatisticas[estatistica] = valor; 
+}
+
+
 int Pokemon::get_estagio(int estatistica){ // Retorna o estágio de uma das 6 estatísticas do Pokémon
     return _estagios[estatistica];
 }
@@ -79,4 +84,10 @@ float Pokemon::calculaDano(Golpe &golpe, Pokemon &pokemon){ // Calcula o dano de
         dano *= 0.5;
 
     return dano;
+}
+
+void Pokemon::ativar_item(Item &item) {
+if (item.get_ativo()) {
+        item.aplicar_efeito(*this);  // Aplica o efeito do item ao Pokémon atual
+    }
 }
