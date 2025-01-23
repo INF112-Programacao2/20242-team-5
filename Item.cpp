@@ -1,4 +1,4 @@
-#include "C:\Users\chell\Documents\inf 112\projeto final\codigo\sourceItems\Item.hpp"
+#include "Item.hpp"
 
 Item::Item(std::string nome, std::string descricao) : _nome_item(nome), _descricao(descricao) {}
 
