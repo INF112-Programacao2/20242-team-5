@@ -3,7 +3,7 @@
 
 #include <string>
 #include <iostream>
-#include "C:\Users\chell\Documents\inf 112\projeto final\codigo\Pokemon.hpp"
+#include "Pokemon.hpp"
 
 // Classe base abstrata
 class Item {
