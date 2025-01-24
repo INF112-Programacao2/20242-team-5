@@ -3,11 +3,11 @@
 
 #include <string>
 #include <vector>
+#include <iostream>
 #include "Condicional.hpp"
 #include "ModificaEst.hpp"
 #include "Tipo.hpp"
 #include "Golpe.hpp"
-#include "Item.hpp"
 
 class Pokemon {
     private:
@@ -20,7 +20,7 @@ class Pokemon {
         Golpe _golpe1, _golpe2, _golpe3, _golpe4; // Golpes atuais do Pokémon
 
     public:
-        Pokemon(int id, std::string nome, int vida, int ataque, int defesa, int ataqueEspecial, int defesaEspecial, int velocidade, Tipo &tipo1, Tipo &tipo2, Golpe golpe1, Golpe golpe2, Golpe golpe3, Golpe golpe4); // Construtor
+        Pokemon(int id, std::string nome, int vida, int ataque, int defesa, int ataqueEspecial, int defesaEspecial, int velocidade, const Tipo &tipo1, const Tipo &tipo2, const Golpe &golpe1, const Golpe &golpe2, const Golpe &golpe3, const Golpe &golpe4);
         int get_id();
         std::string get_nome();
         int get_estatistica(int estatistica); // Retorna uma das 6 estatísticas do Pokémon
@@ -37,9 +37,11 @@ class Pokemon {
         void set_condicao(int condicao); // Altera a condição do Pokémon
         void set_estagio(int estatistica, int estagio); // Altera o estágio de uma das estatísticas do Pokémon
 
-
         float calculaDano(Golpe &golpe, Pokemon &pokemon); // Calcula o dano de um golpe contra um Pokémon
-        void ativar_item(Item &item);
+        Golpe get_golpe1() const;
+        Golpe get_golpe2() const;
+        Golpe get_golpe3() const;
+        Golpe get_golpe4() const;
 };
 
 #endif
