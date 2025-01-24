@@ -1,6 +1,7 @@
 #include "Pokemon.hpp"
 
-Pokemon::Pokemon(int id, std::string nome, int vida, int ataque, int defesa, int ataqueEspecial, int defesaEspecial, int velocidade, Tipo &tipo1, Tipo &tipo2, Golpe golpe1, Golpe golpe2, Golpe golpe3, Golpe golpe4) : _id(id), _nome(nome), _tipo1(tipo1), _tipo2(tipo2), _golpe1(golpe1), _golpe2(golpe2), _golpe3(golpe3), _golpe4(golpe4) {
+Pokemon::Pokemon(int id, std::string nome, int vida, int ataque, int defesa, int ataqueEspecial, int defesaEspecial, int velocidade, const Tipo &tipo1, const Tipo &tipo2, const Golpe &golpe1, const Golpe &golpe2, const Golpe &golpe3, const Golpe &golpe4)
+    : _id(id), _nome(nome), _tipo1(tipo1), _tipo2(tipo2), _golpe1(golpe1), _golpe2(golpe2), _golpe3(golpe3), _golpe4(golpe4) {
     _estatisticas[0] = vida;
     _estatisticas[1] = ataque;
     _estatisticas[2] = defesa;
@@ -8,9 +9,11 @@ Pokemon::Pokemon(int id, std::string nome, int vida, int ataque, int defesa, int
     _estatisticas[4] = defesaEspecial;
     _estatisticas[5] = velocidade;
     _condicao = 0; // Começa sem condição
-    for(int i=0; i<6; i++)
+    for (int i = 0; i < 6; i++) {
         _estagios[i] = 0; // Começa com todos os estágios no 0
+    }
 }
+
 
 int Pokemon::get_id(){
     return _id;
@@ -86,8 +89,18 @@ float Pokemon::calculaDano(Golpe &golpe, Pokemon &pokemon){ // Calcula o dano de
     return dano;
 }
 
-void Pokemon::ativar_item(Item &item) {
-if (item.get_ativo()) {
-        item.aplicar_efeito(*this);  // Aplica o efeito do item ao Pokémon atual
-    }
+Golpe Pokemon::get_golpe1() const {
+    return _golpe1;
+}
+
+Golpe Pokemon::get_golpe2() const {
+    return _golpe2;
+}
+
+Golpe Pokemon::get_golpe3() const {
+    return _golpe3;
+}
+
+Golpe Pokemon::get_golpe4() const {
+    return _golpe4;
 }
