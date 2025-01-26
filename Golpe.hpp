@@ -11,20 +11,24 @@ class Golpe{
         int _precisao; // Chance do golpe acertar
         Tipo _tipo; // Tipo do golpe
         bool _especial; // Se é físico ou especial
+
     public:
         Golpe(); // Construtor
+        
         std::string get_nome();
-        void set_nome(std::string nome);
         int get_poderBase();
-        void set_poderBase(int poderBase);
         int get_precisao();
-        void set_precisao(int precisao);
         Tipo get_tipo();
-        void set_tipo(Tipo tipo);
         int get_tipoNum();
+
+        void set_nome(std::string nome);
+        void set_poderBase(int poderBase);
+        void set_precisao(int precisao);
+        void set_tipo(Tipo tipo);
         void set_tipoNum(int tipoNum);
-        bool is_especial();
         void set_especial(bool especial);
+
+        bool is_especial();
 };
 
 #endif
