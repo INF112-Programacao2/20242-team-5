@@ -11,11 +11,13 @@ class Tipo{
         
     public:
         Tipo(); // Construtor
+        
         std::string get_nome();
-        void set_nome(std::string nome);
         int get_numRep();
-        void set_numRep(int numRep);
         float get_relacao(int tipo1, int tipo2);
+
+        void set_nome(std::string nome);
+        void set_numRep(int numRep);
         void set_relacao(float valor, int tipo1, int tipo2);
 };
 
