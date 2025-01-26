@@ -7,11 +7,14 @@ class Condicional : public Golpe{ // Uma espécie de golpes que aplicam uma cond
     private:
         int _condicao; // 0 = nenhum, 1 = queimadura, 2 = congelamento, 3 = paralisia, 4 = veneno ou 5 = sono
         int _chance; // Chance da condição ser aplicada
+
     public:
         Condicional(); // Construtor
-        int get_condicao();
+
+        int get_condicao() const;
+        int get_chance() const;
+
         void set_condicao(int condicao);
-        int get_chance();
         void set_chance(int chance);
 };
 
