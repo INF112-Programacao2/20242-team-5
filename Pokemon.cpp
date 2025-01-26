@@ -92,6 +92,30 @@ void Pokemon::set_estagio(int estatistica, int estagio) { // Altera o estágio d
     _estagios[estatistica] = estagio;
 }
 
+void Pokemon::set_item(Item *item) {
+    _item = item;
+}
+
+void Pokemon::set_habilidade(Habilidade* habilidade) {
+    _habilidade = habilidade;
+}
+
+
+void Pokemon::usar_item() {
+    if (_item != nullptr) {
+        _item->aplicar_efeito(*this);  // Chama o método usar do item
+    } else {
+        std::cout << _nome << " não tem nenhum item para usar!\n";
+    }
+}
+
+void Pokemon::usar_habilidade() {
+    if (_habilidade) {
+        _habilidade->aplicar(*this); // Aplica a habilidade no próprio Pokémon
+    } else {
+        std::cout << _nome << " não tem habilidade!" << std::endl;
+    }
+}
 
 float Pokemon::calculaDano(Golpe &golpe, Pokemon &pokemon){ // Calcula o dano de um golpe contra um Pokémon
     float dano;
