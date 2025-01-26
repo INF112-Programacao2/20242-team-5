@@ -12,7 +12,7 @@ class Golpe{
         Tipo _tipo; // Tipo do golpe
         bool _especial; // Se é físico ou especial
     public:
-        Golpe(std::string nome, int poderBase, int precisao, Tipo &tipo, bool especial); // Construtor
+        Golpe(); // Construtor
         std::string get_nome();
         void set_nome(std::string nome);
         int get_poderBase();

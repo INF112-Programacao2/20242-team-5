@@ -1,11 +1,19 @@
 #include "Condicional.hpp"
 
-Condicional::Condicional(std::string nome, int poderBase, int precisao, Tipo &tipo, bool especial, int condicao, int chance) : Golpe(nome, poderBase, precisao, tipo, especial), _condicao(condicao), _chance(chance) {} // Construtor
+Condicional::Condicional() {} // Construtor
 
 int Condicional::get_condicao(){
     return _condicao;
 }
 
+void Condicional::set_condicao(int condicao){
+    _condicao = condicao;
+}
+
 int Condicional::get_chance(){
     return _chance;
+}
+
+void Condicional::set_chance(int chance){
+    _chance = chance;
 }

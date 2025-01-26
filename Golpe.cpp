@@ -1,6 +1,6 @@
 #include "Golpe.hpp"
 
-Golpe::Golpe(std::string nome, int poderBase, int precisao, Tipo &tipo, bool especial) : _nome(nome), _poderBase(poderBase), _precisao(precisao), _tipo(tipo), _especial(especial) {} // Construtor
+Golpe::Golpe() {} // Construtor
 
 std::string Golpe::get_nome(){
     return _nome;
