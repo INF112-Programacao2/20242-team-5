@@ -8,6 +8,8 @@
 #include "ModificaEst.hpp"
 #include "Tipo.hpp"
 #include "Golpe.hpp"
+#include "Habilidade.hpp"
+#include "Item.hpp"
 
 // Forward declarations
 class Item;
@@ -50,7 +52,11 @@ public:
     void set_estatistica(int estatistica, int valor);  // Setar novo valor nas estatísticas
     void set_condicao(int condicao); // Altera a condição do Pokémon
     void set_estagio(int estatistica, int estagio); // Altera o estágio de uma das estatísticas do Pokémon
+    void set_item(Item *item);
+    void set_habilidade(Habilidade *habilidade); 
     
+    void usar_item();
+    void usar_habilidade();
     float calculaDano(Golpe &golpe, Pokemon &pokemon);
 };
 
