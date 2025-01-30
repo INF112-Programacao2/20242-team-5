@@ -245,7 +245,7 @@ int main(){
             if(std::cin.fail()) {
                 throw std::invalid_argument("Entrada inválida! Digite um número.");
             }
-            if(escolha_habilidade < 1 || escolha_habilidade > habilidades.size()) {
+            if(escolha_habilidade < 1 || static_cast<std::size_t>(escolha_habilidade) > habilidades.size()) {
                 throw std::out_of_range("Índice para escolha da habilidade inválido");
             }
             // Ajustando o índice para base 0 
@@ -270,7 +270,7 @@ int main(){
             if (std::cin.fail()) {
                 throw std::invalid_argument("Entrada inválida! Digite um número.");
             }
-            if (escolha_item < 1 || escolha_item > itens.size()) {
+            if (escolha_item < 1 || static_cast<std::size_t>(escolha_item) > itens.size()) {
                 throw std::out_of_range("Índice para escolha do item inválido");
             }
             // Ajustando o índice para base 0
@@ -379,7 +379,7 @@ int main(){
             if (std::cin.fail()) {
                 throw std::invalid_argument("Entrada inválida! Digite um número.");
             }
-            if (escolha_habilidade < 1 || escolha_habilidade > habilidades.size()) {
+            if (escolha_habilidade < 1 || static_cast<std::size_t>(escolha_habilidade) > habilidades.size()) {
                 throw std::out_of_range("Índice para escolha da habilidade inválido");
             }
             // Ajustando o índice para base 0 
@@ -403,7 +403,7 @@ int main(){
             if (std::cin.fail()) {
                 throw std::invalid_argument("Entrada inválida! Digite um número.");
             }
-            if (escolha_item < 1 || escolha_item > itens.size()) {
+            if (escolha_item < 1 || static_cast<std::size_t>(escolha_item) > itens.size()) {
                 throw std::out_of_range("Índice para escolha do item inválido");
             }
             // Ajustando o índice para base 0
@@ -428,9 +428,9 @@ int main(){
             treinador1.get_pokemonPonteiro().get_habilidade().aplicar(treinador1.get_pokemonPonteiro());
             treinador2.get_pokemonPonteiro().get_habilidade().aplicar(treinador2.get_pokemonPonteiro());
         } else {
-            if(treinador1.get_pokemonPonteiro().get_habilidade().get_nome() ==  "Cura");
+            if(treinador1.get_pokemonPonteiro().get_habilidade().get_nome() ==  "Cura")
                 treinador1.get_pokemonPonteiro().get_habilidade().aplicar(treinador1.get_pokemonPonteiro());
-            if(treinador2.get_pokemonPonteiro().get_habilidade().get_nome() ==  "Cura");
+            if(treinador2.get_pokemonPonteiro().get_habilidade().get_nome() ==  "Cura")
                 treinador2.get_pokemonPonteiro().get_habilidade().aplicar(treinador2.get_pokemonPonteiro());
         }
         std::cout << "\n";
