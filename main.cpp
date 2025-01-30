@@ -257,7 +257,7 @@ int main(){
     }
 
     // Item
-    std::cout << "Escolha um item abaixo:\n";
+    std::cout << "\nEscolha um item abaixo:\n";
     for(size_t i = 0; i < itens.size(); i++){   // Escreve os itens diponiveis
         std::cout << i+1 << " - " << itens[i]->get_nome() << ", " << itens[i]->get_descricao() << std::endl;
     }
@@ -281,7 +281,7 @@ int main(){
         }
     }
 
-    std::cout << "Nome do treinador 2: "; // Processo de inicialização do treinador 2
+    std::cout << "\nNome do treinador 2: "; // Processo de inicialização do treinador 2
     std::cin >> nome;
     std::cout << std::endl << nome << ", escolha um Pokémon:\n\n";
 
@@ -391,7 +391,7 @@ int main(){
     }
 
     // Item
-    std::cout << "Escolha um item abaixo:\n";   
+    std::cout << "\nEscolha um item abaixo:\n";   
     for(size_t i = 0; i < itens.size(); i++){   // Escreve os itens disponiveis
         std::cout << i+1 << " - " << itens[i]->get_nome() << ": " << itens[i]->get_descricao() << std::endl;
     }
@@ -415,7 +415,7 @@ int main(){
     }
 
     std::cout << std::endl;
-    std::cout << "Iniciando a batalha agora!\n";
+    std::cout << "\nIniciando a batalha agora!\n";
 
     Pokemon pokemon_1 = treinador1.get_pokemon(), pokemon_2 = treinador2.get_pokemon();
     int turno = 1;
